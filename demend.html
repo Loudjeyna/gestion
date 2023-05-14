@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+
+<html lang ="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="dash.css">
+    <link rel="website icon" type="png" href="admin.png">
+    
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+    <meta http-equiv="X-UA-Compitable" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   
+    <!--- css-->
+    <!-- icons-->
+    
+<head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="doctor-icon.png" alt="">
+            </div>
+           
+            <span class="logo_name">Medecin</span>
+        </div> 
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li> <a href="medecin.php">                    
+                    <i class="uil uil-user-md"></i>
+                    <span class="link-name">Page d'accueil</span>                    
+                </a></li>
+                
+                <li> <a href="demend.html">             
+                    <i class="uil uil-plus-circle"></i>
+                    <span class="link-name">Ajout un demande </span>                    
+                </a></li>
+                
+                <li> <a href="">             
+                    <i class="uil uil-plus-circle"></i>
+                    <span class="link-name">Planinication traitements </span>                    
+                </a></li>  
+               
+            </ul>
+            <ul class="logout-mode">
+              <li> <a href="login.php">                     
+                    <i class="uil uil-sign-out-alt"></i>
+                    <span class="link-name">Déconnection</span>                                         
+                 </a></li>
+    
+                 <li class="mode"> 
+                    <a href="#">                    
+                    <i class="uil uil-moon"></i>
+                    <span class="link-name">Thème sombre</span>                                         
+                 </a>
+               <div class="mode-toggle">
+               <span class="switch"></span>
+            </div>
+            </li>                 
+            </ul>
+        </div> 
+    </nav>
+    <section class="dash">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+            <div class="search-box">
+    
+                <i class="uil uil-search"></i>
+                 <input type="text" placeholder="Recherche ...">
+                                
+            </div>
+        </div>
+    
+<div class="container1">
+        <h1 class="h1" >Demend d'hospitalisation</h1>
+
+    
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <title>Form Example</title>
+          <style>
+            body {
+              font-family: Arial, sans-serif;
+              background-color: #f2f2f2;
+              padding: 20px;
+              font-family: Arial, sans-serif;
+                        }
+        
+            .container1 {
+              width: 500px;
+              margin-top:70px;
+              background-color: white;
+              padding: 20px;
+              border-radius: 10px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+              position: absolute;
+              top: 42%;
+              left: 35%;
+              transform: translate(-50%, -50%);
+            }
+        
+            
+    .container1 h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group input:hover,
+    .form-group select:hover {
+      border-color: #888;
+    }
+            .submit-button {
+              width: 100%;
+              padding: 10px;
+              background-color: #1c58c7;
+              border: none;
+              color: white;
+              font-weight: bold;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+        
+            .submit-button:hover {
+              background-color: #2046ce;
+            }
+            .form-group-hidden {
+      display: none;
+    }
+            
+          </style>
+            <script>
+                function toggleSecondSelect() {
+                  var firstSelect = document.getElementById("role");
+                  var secondSelect = document.getElementById("other-option");
+            
+                  if (firstSelect.value === "Assistant") {
+                    secondSelect.classList.add("form-group-hidden");
+                  } else {
+                    secondSelect.classList.remove("form-group-hidden");
+                  }
+                }
+              </script>
+        </head>
+        <body>
+          <div class="container">
+           
+            <form method="POST" action="demendHo.php">
+              <div class="form-group">
+                <label for="nom">Nom:</label>
+                <input type="text"  name="nom" required >
+              </div>
+              <div class="form-group">
+                <label for="prenom">Prénom:</label>
+                <input type="text"  name="prenom" required>
+              </div>
+              <div class="form-group">
+                <label for="username">medecin:</label>
+                <input type="text"  name="medecin" required>
+              </div>
+              <div class="form-group">
+                <label for="date">Date d'hospitalisation:</label>
+                <input type="datetime-local"  name="date" required>
+
+              </div>
+              <div class="form-group" id="other-option">
+                <label for="other">Services:</label>
+                <select id="other" name="service">
+                  <option value="option1">Urgence</option>
+                  <option value="option2">Medecine</option>
+                  <option value="option3">Meternite</option>
+                  <option value="option4">Pédiatrie</option>
+                  <option value="option5">Hemodialyse</option>
+                  <option value="option6">Post-opératoir</option>                  
+                </select>
+              </div>
+              <div class="form-group" id="other-options">
+                <label for="mode">Mode d'Entree:</label>
+                <select id="mode" name="mode">
+                  <option value="option1">mode1</option>
+                  <option value="option2">Mode2</option>
+                  <option value="option3">Mode3</option>
+                  <option value="option4">mode4</option>
+                  <option value="option5">mode5</option>
+                  <option value="option6">mode6</option>                  
+                </select>
+              </div>
+              
+             
+              
+              
+              <button type="submit" value="Submit" class="submit-button">Submit</button>
+            </form>
+          </div>
+        </body>
+        
+        
+            
+            <script src="demdend.js"></script>
+        </body>
+        </html>
+        

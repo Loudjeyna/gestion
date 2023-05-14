@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" >
+  
+    <title>Gestion malades hospitalisés </title>
+    <style>
+        /* ===== Google Font Import - Poppins ===== */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url('back3.jpg');
+      
+    }
+    .container {
+      
+        padding: 50px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    header {
+        margin-top: 150px ;
+      background-color: #f1f7f9;
+      padding: 20px;
+      width: 550px;
+      text-align: center;
+      font-size: 28px;
+      height: 35px;
+      border-radius: 10px 10px 10px 10px;
+      
+    }
+    .button-container {
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      
+      padding: 30px 50px;
+      margin: 20px;
+      font-size: 30px;
+      margin-top: 130px;
+      background-color: #4070f4;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #2459ed;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+    <header>Gestion malades hospitalisés</header>
+  <div class="button-container">
+    <button class="button" onclick="window.location.href='login.php'">Adminstrateur</button>
+    <button class="button" onclick="window.location.href='login.php'">Medecin</button>
+    <button class="button" onclick="window.location.href='login.php'">Infirmier</button>
+    <button class="button" onclick="window.location.href='login.php'">Assistant</button>
+  </div>
+  </div>
+</body>
+</html>
